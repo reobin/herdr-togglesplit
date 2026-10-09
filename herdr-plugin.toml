@@ -1,0 +1,14 @@
+id = "herdr-togglesplit"
+name = "Toggle Split"
+version = "0.1.0"
+
+min_herdr_version = "0.9.0"
+description = "Flip the split under the focused pane between horizontal and vertical, Hyprland togglesplit style"
+platforms = ["linux", "macos"]
+
+[[actions]]
+id = "toggle"
+title = "Toggle split direction"
+description = "Flip the row or column under this pane between horizontal and vertical"
+contexts = ["pane"]
+command = ["sh", "togglesplit.sh"]
